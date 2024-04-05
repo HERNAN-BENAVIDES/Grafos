@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graph Coloring Visualization</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Coloración de un grafo</h1>
+<div id="Nodo">
+  <h2>Agregar nodo</h2>
+  <input type="text" id="nombreNodoInput" placeholder="Nombre del nodo">
+  <button class="btn" id="btnAgregarNodo">Agregar Nodo</button>
+</div>
+<div id="Arista">
+  <h2>Agregar arista</h2>
+  <label for="nodoInicioSelect">Nodo de inicio:</label>
+  <select id="nodoInicioSelect"></select>
+  <label for="nodoFinalSelect">Nodo final:</label>
+  <select id="nodoFinalSelect"></select>
+  <button class="btn" id="btnAgregarArista">Agregar Arista</button>
+</div>
+<div id="btnAplicarColoracion">
+  <button class="btn">Aplicar Coloración</button>
+</div>
+<div id="dibujoGrafo"><!-- Aquí se dibujará el grafo con D3.js --></div>
+<div id="numeroCromaticoPropio"></div>
+<script src="js/app.js" defer></script>
+</body>
+</html>
